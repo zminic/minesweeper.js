@@ -1,0 +1,14 @@
+{
+  "name": "knockout-es5",
+  "homepage": "https://github.com/SteveSanderson/knockout-es5",
+  "_release": "8f9cf23d82",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "8f9cf23d82b1c473fb3024488b801a3e65ed9a74"
+  },
+  "_source": "git://github.com/SteveSanderson/knockout-es5.git",
+  "_target": "*",
+  "_originalSource": "knockout-es5",
+  "_direct": true
+}

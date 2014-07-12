@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Minesweeper</title> 
+	<link rel="stylesheet" href="minesweeper.css" />
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/knockout/dist/knockout.js"></script>
+    <script src="bower_components/knockout-es5/dist/knockout-es5.js"></script>
+	<script src="common.js"></script>
+	<script src="game.js"></script>
+	<script src="board.js"></script>
+</head>
+<body>
+
+    <div id="game">
+        <div id="controls">
+            <div>
+                <h2>
+                    <span>Your time:</span>
+                    <span data-bind="text: timeElapsed.toFixed(1)"></span>
+                </h2>
+            </div>
+            <div>
+                <span>Level:</span>
+                <select data-bind="options: difficultyLevels, optionsText: 'name', value: level">
+                </select>
+                <button class="newGame" type="button" data-bind="click: start">New game</button>
+            </div>
+        </div>
+        <div id="board"></div>
+    </div>
+
+    <script type="text/html" id="boardTemplate">
+        <div data-bind="foreach: fields">
+            <div class="field" data-bind="event: {mousedown: $root.onRevealField}, css: {'mine': isMine, 'hidden': !isRevealed, 'flag': isFlagged}">
+                <span data-bind="text: mineCount || ''"></span>
+            </div>
+        </div>
+        <div style="clear: left"></div>
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/Game.js" />
+        <item url="file://$PROJECT_DIR$/minesweeper.js" />
+        <item url="file://$PROJECT_DIR$/main.js" />
+        <item url="file://$PROJECT_DIR$/minesweeper2.js" />
+        <item url="file://$PROJECT_DIR$/Common.js" />
+        <item url="file://$PROJECT_DIR$/Board.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/Field.js" />
+      <root url="file://$PROJECT_DIR$/Field.js" />
+      <root url="file://$PROJECT_DIR$/Game.js" />
+      <root url="file://$PROJECT_DIR$/minesweeper.js" />
+      <root url="file://$PROJECT_DIR$/main.js" />
+      <root url="file://$PROJECT_DIR$/minesweeper2.js" />
+      <root url="file://$PROJECT_DIR$/Common.js" />
+      <root url="file://$PROJECT_DIR$/Board.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$" libraries="{jQuery-2.0.0}" />
+    <file url="PROJECT" libraries="{jQuery-2.0.0, jquery-DefinitelyTyped, knockout-DefinitelyTyped, knockout.es5-DefinitelyTyped}" />
+  </component>
+</project>
+

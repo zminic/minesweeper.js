@@ -1,0 +1,44 @@
+#game
+  width: 296px
+  margin: auto
+
+ // image preloading
+#game-01
+  background: url('images/flag.png') no-repeat -9999px -9999px;
+#game-02
+  background: url('images/mine.png') no-repeat -9999px -9999px;
+
+#board
+  margin-top: 10px
+  border: 1px outset #666
+  box-shadow: 4px 4px 4px #aaa
+  .field
+    width: 40px
+    height: 40px
+    border: 1px inset #666
+    float:left
+
+    text-align: center
+    cursor: pointer
+    line-height: 40px
+
+    background-color: #fff
+    color: #000
+    font-weight: bold
+    &.hidden
+      &.flag
+        background: #eee url('images/flag.png') center no-repeat !important
+        span
+          display: none
+      span
+        display: none !important
+      background-image:none !important
+      background-color: #eee !important
+      color: #eee !important
+    &.mine
+      background: url('images/mine.png') center no-repeat
+      span
+        display: none;
+
+.clear
+  clear: both

@@ -1,0 +1,20 @@
+{
+  "name": "minesweeper.js",
+  "main": "minesweeper.js",
+  "version": "0.1",
+  "homepage": "https://github.com/zminic/minesweeper.js",
+  "authors": [
+    "zminic <zeljko.minic@outlook.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "knockout": "~3.1.0",
+    "knockout-es5": "*",
+    "requirejs": "~2.1.14"
+  }
+}
