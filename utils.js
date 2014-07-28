@@ -1,5 +1,4 @@
-var Common;
-(function (Common) {
+define(["require", "exports"], function(require, exports) {
     var Event = (function () {
         function Event() {
             this.handlers = [];
@@ -36,6 +35,6 @@ var Common;
         };
         return Event;
     })();
-    Common.Event = Event;
-})(Common || (Common = {}));
-//# sourceMappingURL=Common.js.map
+    exports.Event = Event;
+});
+//# sourceMappingURL=utils.js.map

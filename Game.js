@@ -1,10 +1,5 @@
-/// <reference path="interfaces/jquery.d.ts" />
-/// <reference path="interfaces/knockout.d.ts" />
-/// <reference path="interfaces/knockout.es5.d.ts" />
-/// <reference path="Common.ts" />
-/// <reference path="Board.ts" />
-var Minesweeper;
-(function (Minesweeper) {
+/// <amd-dependency path="knockout-es5" />
+define(["require", "exports", "jquery", "knockout", 'board', "knockout-es5"], function(require, exports, $, ko, b) {
     var Game = (function () {
         function Game() {
             var _this = this;
@@ -57,7 +52,7 @@ var Minesweeper;
 
             this.gameElement.width(this.level.width);
 
-            this.board = new Minesweeper.Board(this.level.dimension, this.level.mineCount, this.boardElement.empty());
+            this.board = new b.Board(this.level.dimension, this.level.mineCount, this.boardElement.empty());
             this.board.draw();
 
             this.board.OnReveal.on(function (a) {
@@ -100,10 +95,6 @@ var Minesweeper;
         };
         return Game;
     })();
-    Minesweeper.Game = Game;
-})(Minesweeper || (Minesweeper = {}));
-
-$(function () {
-    return new Minesweeper.Game().start();
+    exports.Game = Game;
 });
-//# sourceMappingURL=Game.js.map
+//# sourceMappingURL=game.js.map

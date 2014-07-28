@@ -2,23 +2,23 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/Game.js" />
-        <item url="file://$PROJECT_DIR$/minesweeper.js" />
+        <item url="file://$PROJECT_DIR$/game.js" />
+        <item url="file://$PROJECT_DIR$/utils.js" />
         <item url="file://$PROJECT_DIR$/main.js" />
-        <item url="file://$PROJECT_DIR$/minesweeper2.js" />
-        <item url="file://$PROJECT_DIR$/Common.js" />
-        <item url="file://$PROJECT_DIR$/Board.js" />
+        <item url="file://$PROJECT_DIR$/board.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/Field.js" />
       <root url="file://$PROJECT_DIR$/Field.js" />
-      <root url="file://$PROJECT_DIR$/Game.js" />
+      <root url="file://$PROJECT_DIR$/test.js" />
       <root url="file://$PROJECT_DIR$/minesweeper.js" />
-      <root url="file://$PROJECT_DIR$/main.js" />
       <root url="file://$PROJECT_DIR$/minesweeper2.js" />
-      <root url="file://$PROJECT_DIR$/Common.js" />
-      <root url="file://$PROJECT_DIR$/Board.js" />
+      <root url="file://$PROJECT_DIR$/test.js" />
+      <root url="file://$PROJECT_DIR$/game.js" />
+      <root url="file://$PROJECT_DIR$/utils.js" />
+      <root url="file://$PROJECT_DIR$/main.js" />
+      <root url="file://$PROJECT_DIR$/board.js" />
     </CLASSES>
     <SOURCES />
   </library>

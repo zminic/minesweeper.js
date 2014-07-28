@@ -1,18 +1,17 @@
 /// <reference path="interfaces/jquery.d.ts" />
 /// <reference path="interfaces/knockout.d.ts" />
 /// <reference path="interfaces/knockout.es5.d.ts" />
-/// <reference path="Common.ts" />
-var Minesweeper;
-(function (Minesweeper) {
+/// <amd-dependency path="knockout-es5" />
+define(["require", "exports", "utils", "jquery", "knockout", "knockout-es5"], function(require, exports, utils, $, ko) {
     var Board = (function () {
         function Board(dimension, mineCount, boardElement) {
             var _this = this;
             this.dimension = dimension;
             this.mineCount = mineCount;
             this.boardElement = boardElement;
-            this.eventReveal = new Common.Event();
-            this.eventWin = new Common.Event();
-            this.eventGameOver = new Common.Event();
+            this.eventReveal = new utils.Event();
+            this.eventWin = new utils.Event();
+            this.eventGameOver = new utils.Event();
             this.onRevealField = function (field, event) {
                 _this.eventReveal.trigger({
                     field: field,
@@ -130,12 +129,12 @@ var Minesweeper;
 
         Board.prototype.calculateDistances = function () {
             for (var i = 0; i < this.dimension * this.dimension; i++) {
-                if (!this.fields[i].isMine) {
-                    var field = this.fields[i], mines = this.getNearFields(field, function (f) {
-                        return f.isMine;
-                    });
+                var field = this.fields[i];
 
-                    field.mineCount = mines.length;
+                if (!field.isMine) {
+                    field.mineCount = this.getNearFields(field, function (f) {
+                        return f.isMine;
+                    }).length;
                 }
             }
         };
@@ -203,6 +202,6 @@ var Minesweeper;
         };
         return Board;
     })();
-    Minesweeper.Board = Board;
-})(Minesweeper || (Minesweeper = {}));
-//# sourceMappingURL=Board.js.map
+    exports.Board = Board;
+});
+//# sourceMappingURL=board.js.map

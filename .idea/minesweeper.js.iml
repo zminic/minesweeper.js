@@ -8,6 +8,7 @@
     <orderEntry type="library" name="jQuery-2.0.0" level="application" />
     <orderEntry type="library" name="knockout-DefinitelyTyped" level="application" />
     <orderEntry type="library" name="knockout.es5-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="requirejs-DefinitelyTyped" level="application" />
   </component>
 </module>
 
